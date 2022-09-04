@@ -24,7 +24,7 @@ const LayoutBasics = () => {
 
             <Box>
                 <Text>Flex and Spacer: Full width, equal Spacing</Text>
-                <Flex>
+                <Flex >
                     <Box w='170px' h='10' bg='red.500' />
                     <Spacer />
                     <Box w='170px' h='10' bg='red.500' />
@@ -44,7 +44,7 @@ const LayoutBasics = () => {
                 <Text>
                     HStack: The children have equal spacing but don't span the whole container
                 </Text>
-                <HStack spacing='24px'>
+                <HStack spacing='1'>
                     <Box w='170px' h='10' bg='teal.500' />
                     <Spacer />
                     <Box w='170px' h='10' bg='teal.500' />
