@@ -1,5 +1,10 @@
 import React from 'react'
-import { Box, Heading, Flex, Stack, HStack, VStack, Text, Button, Spacer, Icon } from '@chakra-ui/react';
+import {
+    Box, Heading,
+    Flex, Stack,
+    HStack,
+    VStack, Text, Button, Spacer, Icon,
+} from '@chakra-ui/react';
 
 const Cart = () => {
     return (
@@ -13,7 +18,7 @@ const Cart = () => {
                         <Text>Penny board</Text>
                         <Text>PN1234</Text>
                     </Box>
-                    <Spacer/>
+                    <Spacer />
                     <Text fontSize='lg' fontWeight='800'>$119.00</Text>
                 </HStack>
                 <HStack mb='24px'>
