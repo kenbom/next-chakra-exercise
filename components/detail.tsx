@@ -1,7 +1,13 @@
 import React from 'react'
-import { Box, Heading, Flex, Stack, HStack, VStack, Text, Button, Input, Select, Checkbox } from '@chakra-ui/react';
+import {
+    Box, Heading, Flex, Stack, HStack, VStack, Text, Button, Input, Select, Checkbox,
+    useColorMode
+
+} from '@chakra-ui/react';
 
 const Detail = () => {
+    const { toggleColorMode } = useColorMode()
+
     return (
         <>
             <Box p='40px'>
@@ -36,7 +42,7 @@ const Detail = () => {
                     </Box>
                 </Flex>
                 <Checkbox mb='24px'>Ship to the billing address.</Checkbox>
-                <Button w='556px' bgColor='#8AC919'>Place order</Button>
+                <Button onClick={toggleColorMode} w='556px' bgColor='#8AC919'>Place order</Button>
             </Box>
         </>
     )
